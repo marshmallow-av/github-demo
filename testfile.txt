@@ -1,0 +1,18 @@
+# Commands to setup vsc as default editor for git 
+git config --global core.editor "code --wait"
+
+#verify the change with below command, It should output code --wait
+git config --global core.editor 
+
+# Test  if commit commands open the visual editor 
+git commit
+
+# Type the commit message and save and close
+cmd + save
+cmd + w
+
+# create new file 
+touch testfile.txt
+
+# Open the new text file
+code testfile.txt
