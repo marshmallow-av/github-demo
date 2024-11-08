@@ -19,4 +19,6 @@ git branch -m old_name new_name => rename branch
 git branch -d branch_name => delete branch
 git diff master some_other_branch => diff between master and other
 git merge source_branch => merge change from source to current branch ; fast forward merge => only possible when no changes made on target branch
+git merge source_branch --no-ff => disable fast forward branch
+git merge source_branch -m "commit text" => Automatic merge
 
