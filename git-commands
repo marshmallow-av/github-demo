@@ -6,3 +6,17 @@ git status git add start.txt
 git status git commit -m "Adding start text file" 
 git status 
 git push origin master
+
+Branching and Merging
+=======================================================================
+git branch -a => list both local and remote branches
+git branch => list local branches
+git branch new_branch_name => create new branch
+git checkout branch_name => switch branch
+git checkout -b branch_name => create new branch and switch to it
+git log --oneline --decorate => see history
+git branch -m old_name new_name => rename branch
+git branch -d branch_name => delete branch
+git diff master some_other_branch => diff between master and other
+git merge source_branch => merge change from source to current branch ; fast forward merge => only possible when no changes made on target branch
+
